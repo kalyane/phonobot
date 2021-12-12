@@ -159,6 +159,8 @@ def insertReaction():
     db.session.add(reaction)
     db.session.commit()
 
+    return 'ok'
+
 @app.route('/getreactions', methods = ['GET'])
 def getreactions():
     # count the last emojis, 25 seconds ago max
